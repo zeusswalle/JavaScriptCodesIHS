@@ -17,4 +17,3 @@ if(major >= 1) {
     console.log("🗑️Sem major")
 }
 
-// ana linda 
