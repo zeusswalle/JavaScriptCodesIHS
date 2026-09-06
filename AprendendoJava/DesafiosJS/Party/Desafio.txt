@@ -1,0 +1,20 @@
+Crie as seguintes variáveis para um convidado:
+nomeConvidado (string)
+idadeConvidado (number)
+estaNaLista (boolean) — se o nome dele está na lista de convidados
+trouxeIngresso (boolean)
+
+Regras de acesso (nessa ordem de prioridade):
+Se a idade for menor que 18, o acesso é negado, não importa o resto ("Menor de idade").
+Se não estiver na lista E não tiver ingresso, acesso negado ("Sem lista e sem ingresso").
+Se estiver na lista OU tiver ingresso (mas não os dois), o acesso é permitido, mas ele entra na fila normal.
+Se estiver na lista E tiver ingresso, o acesso é permitido com entrada VIP.
+
+Use if / else if / else para montar essa lógica (pode ter condições aninhadas, ou seja, if dentro de if).
+No final, exiba um "recibo" no console parecido com o estilo que você já usa (com as barrinhas --------------- e emojis), mostrando:
+Nome
+Idade
+Se está na lista
+Se trouxe ingresso
+
+Resultado final (Negado / Permitido - Fila normal / Permitido - VIP)

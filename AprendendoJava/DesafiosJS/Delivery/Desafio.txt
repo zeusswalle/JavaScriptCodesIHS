@@ -1,0 +1,32 @@
+Desafio: Sistema de Classificação de Pedido em um Delivery 🍕
+
+Você vai simular o processamento de um pedido de comida, calculando o valor final com descontos e taxas, usando só o que você já sabe (variáveis, template literals, ternário, if/else if/else, switch).
+
+Requisitos:
+Crie as variáveis do pedido:
+nomeCliente (string)
+valorPedido (number) — valor total dos itens
+formaPagamento (string) — pode ser "pix", "cartao" ou "dinheiro"
+ehClienteVip (boolean)
+distanciaKm (number) — distância até o endereço de entrega
+Regras de desconto (baseado na forma de pagamento), usando switch:
+"pix" → 10% de desconto no valor do pedido
+"cartao" → 5% de desconto
+"dinheiro" → 0% de desconto
+qualquer outro valor → mostrar mensagem de forma de pagamento inválida
+
+Regras de taxa de entrega, usando if/else if/else:
+Se distanciaKm for maior que 10 → taxa de R$15
+Se distanciaKm for entre 5 e 10 (inclusive) → taxa de R$8
+Se distanciaKm for menor que 5 → taxa de R$5
+Se ehClienteVip for true, a taxa de entrega é sempre R$0, não importa a distância (essa regra tem prioridade sobre as outras)
+
+Calcule e exiba:
+Valor original do pedido
+Valor do desconto aplicado
+Taxa de entrega
+Valor final = (valor do pedido - desconto) + taxa de entrega
+Monte um "recibo" bonito no console, no seu estilo, mostrando todas essas informações.
+Desafio bônus (mais difícil):
+
+Adicione uma regra: se o valorPedido for maior que R$100, o cliente ganha frete grátis automaticamente, mesmo não sendo VIP (essa regra também teria prioridade sobre a distância, mas menor prioridade que ser VIP — pensa em como combinar essas duas condições de prioridade).
