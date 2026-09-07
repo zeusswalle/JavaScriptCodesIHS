@@ -1,0 +1,28 @@
+Desafio: Sistema de Aprovação de Empréstimo Bancário 🏦
+
+Você vai simular a análise de um pedido de empréstimo, combinando várias condições pra decidir se ele é aprovado, negado ou precisa de análise manual.
+
+Requisitos:
+Crie as variáveis do solicitante:
+nomeCliente (string)
+idade (number)
+rendaMensal (number)
+valorEmprestimo (number) — quanto ele quer emprestar
+temNomeSujo (boolean) — se está com nome negativado (tipo Serasa)
+jaEhClienteBanco (boolean)
+
+Regras de aprovação (nessa ordem de prioridade):
+Se idade for menor que 18 → negado ("Menor de idade")
+Se temNomeSujo for true e não for cliente do banco → negado ("Nome negativado e não é cliente")
+Se valorEmprestimo for maior que 5x a renda mensal → negado ("Valor solicitado muito acima da renda")
+Se temNomeSujo for true mas já for cliente do banco → análise manual (não é negado nem aprovado direto, precisa de um gerente avaliar)
+Se passar por todas as regras acima sem cair em nenhuma → aprovado
+Use if / else if / else pra montar essa lógica.
+Calcule também uma taxa de juros, usando switch baseado numa variável perfilRisco (que você define manualmente como "baixo", "medio" ou "alto"):
+"baixo" → juros de 2% ao mês
+"medio" → juros de 5% ao mês
+"alto" → juros de 9% ao mês
+Exiba um "recibo" da análise, mostrando todos os dados e o resultado final (aprovado / negado / análise manual), junto com a taxa de juros que seria aplicada se for aprovado.
+Desafio bônus:
+
+Calcule quanto o cliente pagaria de juros no primeiro mês, caso o empréstimo seja aprovado (usando a fórmula de porcentagem que você já aprendeu: (valorEmprestimo * taxaJuros) / 100).

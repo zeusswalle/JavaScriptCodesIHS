@@ -1,11 +1,11 @@
 let clientName = `Gabriel`;
-let deliveryValue = 54;
-let formadepagamento = `Cartao`;
+let deliveryValue = 101;
+let formadepagamento = `Pix`;
 let isVip = false;
 let discountPix = 10;
 let discountCard = 5;
 let discountMoney = 0;
-let distanceKM = 10;
+let distanceKM = 5;
 
 let valueDiscountCard = (deliveryValue * discountCard) / 100;
 let valueDiscountPix = (deliveryValue * discountPix) / 100;
