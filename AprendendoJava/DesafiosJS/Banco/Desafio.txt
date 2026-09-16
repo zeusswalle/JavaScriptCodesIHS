@@ -18,6 +18,7 @@ Se valorEmprestimo for maior que 5x a renda mensal → negado ("Valor solicitado
 Se temNomeSujo for true mas já for cliente do banco → análise manual (não é negado nem aprovado direto, precisa de um gerente avaliar)
 Se passar por todas as regras acima sem cair em nenhuma → aprovado
 Use if / else if / else pra montar essa lógica.
+
 Calcule também uma taxa de juros, usando switch baseado numa variável perfilRisco (que você define manualmente como "baixo", "medio" ou "alto"):
 "baixo" → juros de 2% ao mês
 "medio" → juros de 5% ao mês
