@@ -1,0 +1,30 @@
+Desafio: Sistema de Matrícula Escolar 🎓
+
+Você vai simular a matrícula de um aluno numa escola, decidindo em qual turma ele entra e se precisa de alguma pendência resolvida antes.
+
+Requisitos:
+Crie as variáveis do aluno:
+nomeAluno (string)
+idade (number)
+mediaNotas (number) — média das notas do ano anterior (0 a 10)
+documentacaoCompleta (boolean)
+mensalidadeEmDia (boolean)
+
+Regras de matrícula (nessa ordem de prioridade):
+Se documentacaoCompleta for false → matrícula bloqueada ("Documentação pendente")
+Se mensalidadeEmDia for false e idade for maior ou igual a 18 (aluno responsável financeiro por si mesmo) → matrícula bloqueada ("Pendência financeira")
+Se passou pelas duas de cima, calcule a turma baseada na idade, usando switch numa variável que você vai criar (dica: pense em como transformar uma faixa de idade em um valor único pro switch comparar — por exemplo, arredondando ou categorizando a idade em um "grupo"):
+6 a 8 anos → "Fundamental I - Turma A"
+9 a 11 anos → "Fundamental I - Turma B"
+12 a 14 anos → "Fundamental II"
+15 a 17 anos → "Ensino Médio"
+18 anos ou mais → "EJA (Educação de Jovens e Adultos)"
+
+Baseado na mediaNotas, defina um status de desempenho usando ternário aninhado ou if/else:
+Média >= 7 → "Ótimo desempenho 🌟"
+Média >= 5 e < 7 → "Desempenho regular"
+Média < 5 → "Necessita de reforço escolar"
+Monte o recibo/resumo da matrícula no console, mostrando todas as informações e o resultado final.
+Desafio bônus (mais difícil):
+
+Pensa em como resolver o passo 2 (transformar faixa de idade em algo que o switch consiga comparar diretamente) — isso é um baita quebra-cabeça sem loops/funções. Se você travar nisso, me avisa que te dou uma dica específica, porque é o ponto mais desafiador desse exercício.

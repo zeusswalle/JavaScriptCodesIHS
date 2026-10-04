@@ -1,9 +1,9 @@
 let clientName = `Gabriel`;
 let age = 18;
 let rendaMensal = 1500;
-let valorEmprestimo = 5522220;
+let valorEmprestimo = 2000232;
 let temNomeSujo = true;
-let clienteDoBanco = true;
+let clienteDoBanco = false;
 let perfilRisco = `Baixo`;
 
 console.log(`Nome do cliente: ${clientName}`);
@@ -14,7 +14,7 @@ if(age < 18){
     console.log(`Menor de idade, solicitação negada.`);
 }  else if (temNomeSujo === true && clienteDoBanco === false){
            console.log(`Nome negativado e não é cliente.`);
-} else if (valorEmprestimo >= valorEmprestimo * 5){
+} else if (valorEmprestimo >= rendaMensal * 5){
     console.log(`Valor solicitado é muito acima da renda.`);
 } else if (temNomeSujo === true && clienteDoBanco === true) {
     console.log(`Análise Manual (Passar por uma verificação.)`);
