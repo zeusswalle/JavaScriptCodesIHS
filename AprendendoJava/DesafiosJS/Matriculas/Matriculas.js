@@ -4,6 +4,14 @@ let mediaNotas = 9;
 let documentacaoCompleta = true;
 let mensalidade = true;
 
+console.log(`Nome do Aluno: ${nomeAluno}`);
+console.log(`Idade: ${idade}`);
+console.log(`Media das notas: ${9}`);
+console.log();
+console.log();
+console.log();
+console.log();
+
 if (documentacaoCompleta === false){
     console.log(`Documentação pendente`);
 } else if (mensalidade === false && idade >= 18){
